@@ -1,0 +1,268 @@
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+header {
+    background-color: #d9f2f8db;
+    padding: 25px 0;
+}
+
+header h1 {
+    color: rgb(19, 29, 140);
+    font-size: 40px;
+    font-weight: 100;
+    font-style: italic;
+    display: inline-block;
+    position: relative;
+    bottom: 35px;
+    margin-left: 50px;
+}
+
+nav {
+    background-color: #E5E1DA;
+    margin-bottom: 20x;
+}
+
+nav ul {
+    list-style: none;
+    margin: 1;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    flex-grow: 1;
+    /*para separar los elementos*/
+}
+
+nav ul li a {
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 12px 8px;
+    display: block;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: rgba(43, 127, 211, 0.531);
+    color: white;
+}
+
+nav ul li a.activo {
+    background-color: rgba(43, 127, 211, 0.662);
+}
+
+.holder {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #623686;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 10px;
+    padding: 8px;
+}
+
+footer {
+    background-color: #176b87e7;
+    clear: both;
+    color: rgb(240, 240, 240);
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 20px;
+}
+
+/*inicio Home*/
+
+.homeimg img {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bienvenidos {
+    width: 65%;
+    padding-right: 10px;
+    box-sizing: border-box;
+    background-color: #f4f7f7;
+    padding: 25px;
+}
+
+.bienvenidos p {
+    font-size: 25px;
+}
+
+.categorias {
+    width: 25%;
+    background-color: #d9f2f8db;
+    padding: 10px;
+    float: left;
+    height: auto;
+    margin: 8px;
+}
+
+.categorias h2 {
+    color: rgba(25, 101, 177, 0.999);
+    display: flex;
+    justify-content: center;
+}
+
+.categorias ul {
+    list-style-type: square;
+    padding: 0;
+    margin: 10px;
+}
+
+.categorias ul li {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.categorias ul li a {
+    font-size: 30px;
+    margin: 20px;
+    text-decoration: rgba(43, 127, 211, 0.944) wavy underline;
+    font-weight: bold;
+}
+
+.categorias ul li a:hover {
+    font-size: 35px;
+    text-decoration: rgba(207, 49, 49, 0.679) wavy underline;
+}
+
+.lista-articulos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#articulo {
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    flex: 1 0 300px;
+    justify-content: space-between;
+}
+
+#articulo .imagen-articulo img {
+    width: 100%;
+    height: 650px;
+    border-radius: 6px;
+}
+
+#articulo .texto-articulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 0 300px;
+    margin: 20px;
+    position: relative;
+}
+
+#articulo .texto-articulo h3 {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+#articulo .texto-articulo p {
+    font-size: 25px;
+    color: #292929;
+
+}
+
+
+
+/*fin Home*/
+
+/*inicio Tendencias*/
+.lista-tendencias div h1 {
+    display: flex;
+    font-size: 45px;
+    justify-content: center;
+    text-shadow: #292929;
+    font-weight: bold;
+    margin: 25px;
+    padding: 20px;
+    font-family: Geneva, Tahoma, sans-serif;
+    text-decoration: rgba(43, 127, 211, 0.944) wavy underline;
+}
+
+#articulo-tendencia {
+    width: auto;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+#articulo-tendencia div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+}
+#articulo-tendencia .articulo-tendencia-imagenes {
+    display: inline-flex;
+    flex-direction: row;
+    margin-left: 10px 25px;
+}
+
+#articulo-tendencia .articulo-tendencia-imagenes .icono-tendencia a img {
+    width: 100px;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+#articulo-tendencia .articulo-tendencia-imagenes img {
+    align-items: center;
+    margin-left: 5px;
+    display: inline-block;
+    justify-content: space-evenly;
+    width: 950px;
+}
+
+#articulo-tendencia .articulo-tendencia-texto {
+    padding: 20px;
+    width: 100%;
+    margin-right: 30px;
+}
+
+#articulo-tendencia .articulo-tendencia-texto h3 {
+    font-size: 35px;
+    margin: 25px 5px
+}
+
+#articulo-tendencia .articulo-tendencia-texto p {
+    font-size: 25px;
+    color: #292929;
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
