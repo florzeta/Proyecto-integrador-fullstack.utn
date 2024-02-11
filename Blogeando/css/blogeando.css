@@ -236,11 +236,11 @@ footer {
 
 .seccion-articulos div h2 {
     display: inline-block;
-    font-size: 45px;
+    font-size: 38px;
     justify-content: center;
     text-shadow: #292929;
     font-weight: bold;
-    margin: 25px;
+    margin-bottom: 25px;
     padding: 20px;
     font-family: Geneva, Tahoma, sans-serif;
     text-decoration: rgba(43, 127, 211, 0.944) wavy underline;
@@ -344,7 +344,10 @@ footer {
 }
 
 #acerca-de h2 {
+    font-size: 32px;
     display: inline;
+    font-family: Geneva, Tahoma, sans-serif;
+    text-decoration: rgba(43, 127, 211, 0.944) wavy underline;
 }
 
 #acerca-de div {
@@ -362,7 +365,7 @@ footer {
 
 #acerca-de p {
     font-size: 35px;
-    margin: 25px 30x;
+    margin: 25px 35x;
 }
 
 #acerca-de img {
