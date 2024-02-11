@@ -10,12 +10,12 @@ body {
 }
 
 header {
-    background-color: #d9f2f8db;
+    background-color: #5696e9ed;
     padding: 25px 0;
 }
 
 header h1 {
-    color: rgb(19, 29, 140);
+    color: rgb(255, 255, 255);
     font-size: 40px;
     font-weight: 100;
     font-style: italic;
@@ -26,7 +26,7 @@ header h1 {
 }
 
 nav {
-    background-color: #E5E1DA;
+    background-color: #e7dcf5;
     margin-bottom: 20x;
 }
 
@@ -46,7 +46,7 @@ nav ul li a {
     color: black;
     font-size: 30px;
     text-decoration: none;
-    padding: 12px 8px;
+    padding: 15px 8px;
     display: block;
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -54,12 +54,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: rgba(43, 127, 211, 0.531);
+    background-color: rgba(95, 160, 226, 0.945);
     color: white;
 }
 
 nav ul li a.activo {
-    background-color: rgba(43, 127, 211, 0.662);
+    background-color: rgba(153, 194, 236, 0.877);
 }
 
 .holder {
@@ -71,16 +71,17 @@ h2 {
     color: #623686;
     font-weight: bold;
     font-size: 30px;
-    margin: 15px;
-    padding: 8px;
+    margin: 20px 20px;
+    padding: 10px;
     display: flex;
     align-items: center;
 }
 
 h2 img {
     margin-left: 20px;
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
+    align-items: center;
 }
 
 footer {
@@ -205,79 +206,16 @@ footer {
 
 /*fin Home*/
 
-/*inicio Tendencias*/
-.lista-tendencias div h2 {
+/*Inicio Listado de articulos*/
+
+.seccion-articulos div{
     display: flex;
-    font-size: 45px;
     justify-content: center;
-    text-shadow: #292929;
-    font-weight: bold;
-    margin: 25px;
-    padding: 20px;
-    font-family: Geneva, Tahoma, sans-serif;
-    text-decoration: rgba(43, 127, 211, 0.944) wavy underline;
-}
-
-#articulo-tendencia {
-    width: auto;
-    border: 2px solid black;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 30px 5px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    display: block;
-}
-
-#articulo-tendencia div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 5px;
-}
-#articulo-tendencia .articulo-tendencia-imagenes {
-    display: inline-flex;
-    flex-direction: row;
-    margin-left: 10px 25px;
-}
-
-#articulo-tendencia .articulo-tendencia-imagenes .icono-tendencia a img {
-    width: 100px;
     align-items: center;
-    display: flex;
-    position: relative;
 }
-
-#articulo-tendencia .articulo-tendencia-imagenes img {
-    align-items: center;
-    margin-left: 5px;
-    display: inline-block;
-    justify-content: space-evenly;
-    width: 950px;
-}
-
-#articulo-tendencia .articulo-tendencia-texto {
-    padding: 20px;
-    width: 100%;
-    margin-right: 30px;
-}
-
-#articulo-tendencia .articulo-tendencia-texto h3 {
-    font-size: 35px;
-    margin: 25px 5px
-}
-
-#articulo-tendencia .articulo-tendencia-texto p {
-    font-size: 25px;
-    color: #292929;
-    padding: 15px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-/*Fin tendencias*/
-/*Inicio Buscar*/
 
 .seccion-articulos div h2 {
-    /* display: flex; */
+    display: inline-block;
     font-size: 45px;
     justify-content: center;
     text-shadow: #292929;
@@ -286,19 +224,27 @@ footer {
     padding: 20px;
     font-family: Geneva, Tahoma, sans-serif;
     text-decoration: rgba(43, 127, 211, 0.944) wavy underline;
+}
+
+.seccion-articulos .lista-articulos div{
+    display: inline-block;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
 }
 
 .articulo {
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 16px;
-    margin:16px 0;
+    margin: 16px 0;
     display: flex;
     gap: 32px;
     align-items: center;
 }
 
-.articulo .articulo-texto h3{
+.articulo .articulo-texto h3 {
     color: #623686;
     font-weight: 500;
     font-style: italic;
@@ -307,11 +253,11 @@ footer {
     font-size: 35px;
 }
 
-.articulo .articulo-texto p{
+.articulo .articulo-texto p {
     font-size: 20px;
 }
 
-.articulo img{
+.articulo img {
     border-radius: 13px;
     display: block;
     max-width: 800px;
@@ -320,3 +266,46 @@ footer {
 .articulo:nth-child(even) {
     flex-direction: row-reverse;
 }
+
+/*Fin Listado de articulos*/
+
+
+/*Inicio Buscar*/
+
+.div-buscador {
+    background-color: #5696e9ed;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 18px;
+    width: 50%;
+    margin: 90px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#buscador {
+    width: 80%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#btnBuscar {
+    background-color: #0e4f94;
+    color: #fff;
+    border: none;
+    padding: 8px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 22px;
+    margin-left: 10px;
+    gap: 3;
+}
+
+#btnBuscar:hover {
+    background-color: #a5c9f0;
+    color: black;
+    font-size: 25px;
+}
+
